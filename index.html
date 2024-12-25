@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body >
+    <header class="container mx-auto mt-10 px-10 ">
+        <nav>
+            <div class="navbar bg-base-100 justify-center items-center ">
+                <div class="navbar-start">
+                  <a class="btn btn-ghost text-xl">
+                    <img src="./images/Group 1.png" alt="">
+                    Peddy</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a >Shop</a></li>
+                    <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="border border-[#0E7A8133] rounded-full p-1">
+                    <img src="./images/Frame.png" alt="">
+                  </a>
+                </div>
+              </div>
+        </nav>
+            <div class="flex flex-col justify-center items-center space-y-2 mt-4"> 
+                <p>Bringing Families Together ❤️‍🔥 </p>
+                <p class="font-bold text-5xl text-center">Your Path to Adoption <br> Starts Here</p> 
+                <p class="text-center">It is a long established fact that a reader will be distracted by the readable content of a page when looking <br> at its layout. The point of using Lorem Ipsum is that it has a.</p>
+                <button class="bg-[#0E7A81] p-4 text-white rounded-xl">
+                 <a href="#adopt-section">View More</a>   
+                </button>
+                <img class="w-1/2" src="./images/2151806337 1.png" alt="">
+
+            </div>
+           
+    </header>
+    <main class="container mx-auto mt-10 px-10 ">
+        <div id="adopt-section" class="flex flex-col justify-center items-center text-center space-y-3">
+        <p class="font-black text-4xl">Adopt  Your  Best Friend</p>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page <br> when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+    </div>
+<!-- button -->
+
+    <div id="button_container" class="flex flex-row justify-between mt-10">
+
+    </div>
+    <div class="flex flex-row justify-between mt-10">
+        <p class="text-[#131313] text-xl font-semibold">Best Deal For you</p>
+        <button class="bg-[#0E7A81] px-4 py-1 text-white rounded-2xl">Sort by Price</button>
+    </div>
+    <div id="loading-spinner" class="hidden text-center my-40">
+        <span class="loading loading-spinner text-info"></span>
+    </div>
+   <div class="flex flex-row justify-between gap-3 ">
+    <div id="all_items" class=" grid grid-cols-3 gap-3 w-3/4">
+        
+
+    </div>
+
+    <div id="likebtn1" class=" border border-red-600 w-1/4 mt-10  grid grid-cols-2 ">
+       
+    </div>
+
+<dialog id="showdetailsss" class="modal modal-bottom sm:modal-middle">
+
+  <div class="modal-box" >
+    <div id="pet_details_container">
+        
+    
+    </div>
+    
+    <div class="modal-action w-full flex justify-center items-center  bg-[#0E7A8133] rounded-xl p-4">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="text-[#0E7A81] text-xl" >Cancel</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+</div>
+    
+<!-- Countdown Overlay -->
+<div id="countdown-overlay" class="hidden fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50">
+    <div id="countdown-text" class="text-white text-9xl font-bold"></div>
+</div>
+
+    </main>
+    <footer class="bg-[#131313] ">
+        <div class="container mx-auto mt-10 px-6">
+            <div class="flex flex-row justify-between px-10 py-20">
+                <div>
+                    <a class="btn btn-ghost text-xl text-white">
+                        <img src="./images/Group 1.png" alt="">
+                        Peddy</a>
+                    <p class="text-white">Location: av. Washington 165, NY CA 54003 </p>
+                    <p class="text-white">Phone: +31 85 964 47 25</p> 
+                    <p class="text-white">Email: info@yourdomain.com</p>   
+                    <p class="text-white">Openings hours: 9.00 AM - 5.00 PM</p> 
+                </div>
+    
+                <div>
+                    <p class="text-white">Useful Links</p>
+                    <ul class="text-[#FFFFFF99]">
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Animal</li>
+                    <li>Foundation</li>
+                    <li>Contact</li>
+                    </ul>
+                    
+                </div>
+    
+                <div class="flex flex-col space-y-2">
+                    <p class="text-white">Drop Message</p>
+                    <input class="bg-[#FFFFFF0D] px-4 py-2 rounded-lg" type="email" name="" id="" placeholder="Enter email">
+                    <button class="bg-[#0E7A81] text-white px-4 py-2 rounded-lg">Subscribe</button>
+                </div>
+            </div>
+            
+           
+        </div>
+
+    </footer>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
